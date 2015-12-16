@@ -2,7 +2,7 @@
 
 Backbone/React App displaying contacts which includes an "add contact" route.  New contacts may successfully be added to the current contact list.
 
-This app may be viewed at: wakeful-cherry.surge.sh
+This app may be viewed at: https://wakeful-cherry.surge.sh
 
 
 
