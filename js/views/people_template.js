@@ -6,12 +6,12 @@ function processData(data) {
       </li>
     `;
   }).join("");
-};
+}
 
 export default function(data) {
   return `
     <div class="people-list">
-      <h1>Contacts</h1>
+      <h1>My Peeps</h1>
       <ul>${processData(data)}</ul>
       <button class="newPersonBtn">Add New Contact</button>
     </div>

@@ -1,7 +1,7 @@
 let newContactTemplate = `
 
   <button class="backBtn rats" data-to="people">
-    <i class="fa fa-arrow-left"></i>Rats, back to contacts
+    <i class="fa fa-arrow-left"></i>Back to contacts
   </button>
   
   <h2 class="newTitle">New Contact Information</h2>
@@ -17,4 +17,4 @@ let newContactTemplate = `
 
   `; 
 
-  export default newContactTemplate;   
+export default newContactTemplate;   

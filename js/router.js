@@ -2,14 +2,16 @@ import Backbone from 'backbone';
 import $ from 'jquery';
 
 import {
-  People as PeopleCollection
+  People as PeopleCollection, 
+
+  Person,
 } from './resources';
 
 import {
   People as PeopleView, 
   Person as PersonView, 
+  Spinner,
   newContactTemplate,
-  Spinner
 } from './views';
 
 export default Backbone.Router.extend({
@@ -50,7 +52,7 @@ export default Backbone.Router.extend({
       });
 
       newFriend.save();
-      this.navigate('people', {trigger: true});
+      this.navigate(`people`, {trigger: true});
     });
   },
   
@@ -83,7 +85,7 @@ export default Backbone.Router.extend({
         );
     } else {
       this.showSpinner();
-      person = this.collection.ad({objectId: id});
+      person = this.collection.add({objectId: id});
       person.fetch().then(() => {
         this.$el.html (
           PersonView(
@@ -91,7 +93,7 @@ export default Backbone.Router.extend({
             )
           );
       });
-    };
+    }
   },
   
   addNew() {
@@ -99,15 +101,15 @@ export default Backbone.Router.extend({
     this.$el.html(newContactTemplate);
   },  
 
-  showSpiner() {
-    this.$el.html (Spinner());
+  showSpinner() {
+    this.$el.html (Spinner() );
   },
 
   start() {
     Backbone.history.start();
     return this;
-    },
-  });  
+  },
+});  
 
   
 

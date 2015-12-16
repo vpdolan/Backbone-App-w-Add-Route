@@ -6,6 +6,6 @@ import Spinner from './spinner';
 export {
   Person,
   People,
-  Spinner,
-  newContactTemplate
+  newContactTemplate,
+  Spinner
 };
