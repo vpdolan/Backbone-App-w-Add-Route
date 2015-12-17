@@ -1,6 +1,6 @@
 ## Welcome to My Project
 
-Backbone/React App displaying contacts which includes an "add contact" route.  New contacts may successfully be added to the current contact list.
+Backbone App displaying contacts which includes an "add contact" route.  New contacts may successfully be added to the current contact list.
 
 This app may be viewed at: https://wakeful-cherry.surge.sh
 
